@@ -1,0 +1,56 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Admin",
+      "login": "admin",
+      "senha": "123",
+      "email": "admin@retrogame.com"
+    },
+    {
+      "id": "2",
+      "nome": "User",
+      "login": "user",
+      "senha": "123",
+      "email": "user@retrogame.com"
+    }
+  ],
+  "jogos": [
+    {
+      "id": 1,
+      "titulo": "Resident Evil 2",
+      "descricao_curta": "O terror psicológico que revolucionou o survival horror.",
+      "conteudo": "Resident Evil 2 coloca o jogador em Raccoon City, acompanhando Leon S. Kennedy e Claire Redfield em uma fuga cheia de tensão, puzzles e criaturas memoráveis.",
+      "ano": 1998,
+      "desenvolvedora": "Capcom",
+      "genero": "Survival Horror",
+      "plataforma": "PlayStation",
+      "destaque": true,
+      "imagem_principal": "assets/re2.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Sonic the Hedgehog 2",
+      "descricao_curta": "Velocidade, fases marcantes e a estreia de Tails.",
+      "conteudo": "Sonic 2 expandiu tudo o que o primeiro jogo fez, trazendo fases icônicas, trilha sonora marcante e a parceria com Tails.",
+      "ano": 1992,
+      "desenvolvedora": "SEGA",
+      "genero": "Plataforma",
+      "plataforma": "Mega Drive",
+      "destaque": true,
+      "imagem_principal": "assets/sonic2.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "The Legend of Zelda: Ocarina of Time",
+      "descricao_curta": "A aventura que definiu os jogos 3D.",
+      "conteudo": "Ocarina of Time levou Link a uma jornada no tempo para impedir Ganondorf. Com exploração e música memorável, virou um clássico histórico.",
+      "ano": 1998,
+      "desenvolvedora": "Nintendo",
+      "genero": "Aventura",
+      "plataforma": "Nintendo 64",
+      "destaque": true,
+      "imagem_principal": "assets/zelda.jpg"
+    }
+  ]
+}

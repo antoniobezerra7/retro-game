@@ -1,0 +1,10 @@
+# VS Code History
+.history/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node modules (se usar)
+node_modules/
+npm-debug.log
