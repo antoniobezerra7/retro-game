@@ -1,0 +1,101 @@
+{
+  "usuarios": [
+    {
+      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com",
+      "admin": true
+    },
+    {
+      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com",
+      "admin": false
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "nome": "The Legend of Zelda",
+      "descricao": "Um dos maiores clássicos dos videogames, The Legend of Zelda é um jogo de ação e aventura que revolucionou o gênero.",
+      "detalhes": "Desenvolvido pela Nintendo para o NES, The Legend of Zelda é considerado um dos melhores jogos de todos os tempos. O jogo combina exploração, puzzle-solving e combate em um mundo aberto.",
+      "ano": 1986,
+      "console": "Nintendo Entertainment System (NES)",
+      "genero": "Ação-Aventura",
+      "imagem": "zelda.jpg",
+      "destaque": true,
+      "criador": "Shigeru Miyamoto",
+      "classificacao": 9.5
+    },
+    {
+      "id": 2,
+      "nome": "Sonic the Hedgehog 2",
+      "descricao": "O icônico ouriço azul retorna em uma sequência melhorada com novos nivéis e personagens.",
+      "detalhes": "Sonic the Hedgehog 2 é uma sequência direta do jogo original, apresentando o novo personagem Tails e varios novos mundos. O jogo marca a divisão entre os temas Day e Night.",
+      "ano": 1992,
+      "console": "Sega Genesis",
+      "genero": "Platformer",
+      "imagem": "sonic2.jpg",
+      "destaque": true,
+      "criador": "Yuji Naka",
+      "classificacao": 9.2
+    },
+    {
+      "id": 3,
+      "nome": "Super Mario Bros",
+      "descricao": "O jogo que salvou a indústria de videogames e criou um ícone cultural.",
+      "detalhes": "Super Mario Bros é um jogo de plataforma clássico que introduziu Mario ao mundo. Com sua jogabilidade inovadora e level design preciso, ele estabeleceu os padrões para todo o gênero.",
+      "ano": 1985,
+      "console": "Nintendo Entertainment System (NES)",
+      "genero": "Plataforma",
+      "imagem": "mario.jpg",
+      "destaque": true,
+      "criador": "Shigeru Miyamoto",
+      "classificacao": 9.8
+    },
+    {
+      "id": 4,
+      "nome": "Pac-Man",
+      "descricao": "Um dos primeiros arcade hits que se tornou fenômeno cultural mundial.",
+      "detalhes": "Pac-Man é um jogo de arcade que revolucionou a indústria. O objetivo simples, mas desafiador, de comer todos os pontos enquanto evita os fantasmas o tornou um clássico instantâneo.",
+      "ano": 1980,
+      "console": "Arcade",
+      "genero": "Labirinto",
+      "imagem": "pacman.jpg",
+      "destaque": false,
+      "criador": "Toru Iwatani",
+      "classificacao": 9.0
+    },
+    {
+      "id": 5,
+      "nome": "Donkey Kong",
+      "descricao": "O jogo de arcade que lançou a carreira de Mario (conhecido como Jumpman naquela época).",
+      "detalhes": "Donkey Kong é um clássico arcade onde o jogador controla Jumpman (depois Mario) para resgatar uma mulher de um gorila de 800 libras. O jogo apresenta níveis progressivamente mais desafiadores.",
+      "ano": 1981,
+      "console": "Arcade",
+      "genero": "Plataforma",
+      "imagem": "donkeykong.jpg",
+      "destaque": false,
+      "criador": "Shigeru Miyamoto",
+      "classificacao": 8.9
+    },
+    {
+      "id": 6,
+      "nome": "Space Invaders",
+      "descricao": "O jogo que criou o gênero shooter e se tornou um fenômeno cultural.",
+      "detalhes": "Space Invaders é considerado um dos primeiros jogos de shooter bem-sucedidos. Sua simplicidade e estratégia envolvente o tornou incrivelmente popular nas arcadas e posteriormente em casa.",
+      "ano": 1978,
+      "console": "Arcade",
+      "genero": "Shoot-em-up",
+      "imagem": "spaceinvaders.jpg",
+      "destaque": false,
+      "criador": "Tomohiro Nishikado",
+      "classificacao": 8.7
+    }
+  ],
+  "favoritos": []
+}

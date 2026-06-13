@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Itens - Retro Game</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .crud-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .crud-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .games-table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        th {
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--light-color);
+        }
+
+        tbody tr:hover {
+            background-color: var(--light-color);
+        }
+
+        .btn-sm {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 968px) {
+            .crud-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                🎮 Retro Game
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a id="favoritosLink" href="favoritos.html">❤️ Favoritos</a>
+            </nav>
+            <div class="auth-buttons">
+                <span id="userName" style="color: white; font-weight: 600;"></span>
+                <button id="logoutBtn" class="btn btn-danger" onclick="fazerLogout()">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main style="min-height: calc(100vh - 200px);">
+        <div class="crud-container">
+            <h2 class="section-title">➕ Cadastro de Jogos</h2>
+            
+            <div class="crud-grid">
+                <!-- FORMULÁRIO -->
+                <div>
+                    <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Novo Jogo</h3>
+                        <form id="crudForm">
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="descricao">Descrição:</label>
+                                <input type="text" id="descricao" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="detalhes">Detalhes:</label>
+                                <textarea id="detalhes" style="resize: vertical; min-height: 80px;" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ano">Ano:</label>
+                                <input type="number" id="ano" min="1970" max="2100" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="console">Console:</label>
+                                <input type="text" id="console" placeholder="ex: Nintendo NES" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="genero">Gênero:</label>
+                                <input type="text" id="genero" placeholder="ex: Plataforma" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="criador">Criador:</label>
+                                <input type="text" id="criador" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="imagem">Nome da Imagem:</label>
+                                <input type="text" id="imagem" placeholder="ex: mario.jpg" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="classificacao">Classificação (1-10):</label>
+                                <input type="number" id="classificacao" min="1" max="10" step="0.1" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="destaque">
+                                    Marcar como destaque
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Adicionar Jogo</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- TABELA DE JOGOS -->
+                <div>
+                    <div class="games-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Ano</th>
+                                    <th>Console</th>
+                                    <th>Gênero</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="gamesTableBody">
+                                <tr>
+                                    <td colspan="5" style="text-align: center;">Carregando...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2025 Retro Game. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="assets/scripts/app.js"></script>
+</body>
+</html>

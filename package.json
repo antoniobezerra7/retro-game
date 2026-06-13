@@ -1,0 +1,20 @@
+{
+  "name": "retro-game",
+  "version": "1.0.0",
+  "description": "Projeto Retro Game - Trabalho Prático 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db/db.json --port 3000 --static public",
+    "dev": "json-server --watch db/db.json --port 3000 --static public"
+  },
+  "keywords": [
+    "retro",
+    "games",
+    "json-server"
+  ],
+  "author": "Biscoito",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

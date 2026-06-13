@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes - Retro Game</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                🎮 Retro Game
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a id="cadastroLink" href="cadastro_itens.html" style="display: none;">➕ Cadastro</a>
+                <a id="favoritosLink" href="favoritos.html" style="display: none;">❤️ Favoritos</a>
+            </nav>
+            <div class="auth-buttons">
+                <span id="userName" style="color: white; font-weight: 600;"></span>
+                <button id="loginBtn" class="btn btn-secondary" onclick="irParaLogin()">Login</button>
+                <button id="logoutBtn" class="btn btn-danger" onclick="fazerLogout()" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main style="min-height: calc(100vh - 200px); padding: 2rem 0;">
+        <div id="detailsContainer" class="details-container">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Carregando detalhes...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2025 Retro Game. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="assets/scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game - Clássicos dos Videogames</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                🎮 Retro Game
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a id="cadastroLink" href="cadastro_itens.html" style="display: none;">➕ Cadastro</a>
+                <a id="favoritosLink" href="favoritos.html" style="display: none;">❤️ Favoritos</a>
+            </nav>
+            <div class="auth-buttons">
+                <span id="userName" style="color: white; font-weight: 600;"></span>
+                <button id="loginBtn" class="btn btn-secondary" onclick="irParaLogin()">Login</button>
+                <button id="logoutBtn" class="btn btn-danger" onclick="fazerLogout()" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== SEÇÃO 1: CARROSSEL ===== -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <h2 class="section-title">🌟 Destaque</h2>
+            <div id="carousel" class="carousel" style="height: 400px; border-radius: 10px; position: relative;">
+                <div class="carousel-content"></div>
+            </div>
+            <div class="carousel-controls">
+                <button id="prevBtn" class="carousel-btn">← Anterior</button>
+                <div class="carousel-indicators"></div>
+                <button id="nextBtn" class="carousel-btn">Próximo →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO 2: PESQUISA E CARDS ===== -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 Pesquise um jogo...">
+            <button id="searchBtn" class="btn btn-primary">Buscar</button>
+        </div>
+    </section>
+
+    <section class="cards-section">
+        <h2 class="section-title">🎯 Todos os Jogos</h2>
+        <div id="gamesContainer" class="cards-grid">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Carregando jogos...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO 3: VISUALIZAÇÃO AVANÇADA ===== -->
+    <section class="visualization-section">
+        <div class="visualization-container">
+            <h2 class="section-title">📊 Análise de Consoles</h2>
+            <div id="chartContainer"></div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO 4: INFORMAÇÕES DO AUTOR ===== -->
+    <section class="author-section">
+        <div class="author-container">
+            <img src="assets/img/author.jpg" alt="Autor" class="author-avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22150%22 height=%22150%22%3E%3Crect fill=%22%239b59b6%22 width=%22150%22 height=%22150%22/%3E%3Ctext x=%2275%22 y=%2275%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2230%22%3E👤%3C/text%3E%3C/svg%3E'">
+            <div class="author-info">
+                <h2>Antonio Bezerra</h2>
+                <p class="author-bio">
+                    Desenvolvedor Full Stack apaixonado por tecnologia e videogames clássicos. 
+                    Estudante de Ciência da Computação na PUC Minas, dedicado a criar aplicações 
+                    web modernas e responsivas.
+                </p>
+                <div class="author-details">
+                    <div class="author-detail">📧 <strong>Email:</strong> antonio@example.com</div>
+                    <div class="author-detail">🏢 <strong>Curso:</strong> Ciência da Computação</div>
+                    <div class="author-detail">👥 <strong>Turma:</strong> 2025</div>
+                </div>
+                <div class="author-social">
+                    <a href="https://github.com/antoniobezerra7" class="social-link" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/antoniobezerra" class="social-link" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/antoniobezerra" class="social-link" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2025 Retro Game. Todos os direitos reservados. | Desenvolvido por Antonio Bezerra</p>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="assets/scripts/app.js"></script>
+    <script>
+        // Renderizar gráfico após carregar os dados
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                renderizarGrafico();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
